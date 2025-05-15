@@ -119,6 +119,10 @@ img {
     margin-top: 1rem;
 }
 
+.only-one {
+    color: #666;
+}
+
 .why-us {
     background-color: #f0f0f0;
     padding: 4rem 0;
@@ -146,6 +150,7 @@ img {
     padding: 2rem 0;
     font-size: 0.9rem;
 }
+
 
 .navbar img {
     width: 200px;
@@ -271,4 +276,40 @@ img {
     font-style: italic;
     color: #444;
     margin-bottom: 0.5rem;
+}
+
+.services-full {
+    padding: 4rem 0;
+    background: #d3d3d3;
+}
+
+.services-full h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.services-full .intro-text {
+    text-align: center;
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+.service-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    align-items: center;
+}
+
+
+.service-block:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.service-block img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    flex-shrink: 0;
 }
