@@ -266,6 +266,8 @@ img {
     width: 100%;
     border-radius: 8px;
     margin-bottom: 1rem;
+    height: auto;
+    object-fit: contain;
 }
 
 .team-card h4 {
@@ -312,4 +314,17 @@ img {
     max-width: 400px;
     border-radius: 8px;
     flex-shrink: 0;
+}
+
+.service-info {
+    flex: 1;
+}
+
+.service-info h3 {
+    margin-bottom: 0.5rem;
+}
+
+.service-info p {
+    color: #555;
+    line-height: 1.6;
 }
