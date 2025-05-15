@@ -259,16 +259,19 @@ img {
 
 .team-card img {
     width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
     border-radius: 8px;
-    margin-bottom: 1 rem;
-}
+    margin: 0 auto;
+    display: block;
 
-.team-card h4 {
-    margin-bottom: 0.3rem;
-}
+    .team-card h4 {
+        margin-bottom: 0.3rem;
+    }
 
-.team-card .role {
-    font-style: italic;
-    color: #444;
-    margin-bottom: 0.5rem;
-}
+    .team-card .role {
+        font-style: italic;
+        color: #444;
+        margin-bottom: 0.5rem;
+    }
