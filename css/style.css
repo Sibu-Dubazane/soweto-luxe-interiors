@@ -223,6 +223,7 @@ img {
 }
 
 
+
 .team-section {
     padding: 4rem 0;
     background: #d3d3d3;
@@ -257,6 +258,8 @@ img {
 
 .team-card img {
     width: 100%;
+    height: auto;
+    object-fit: cover;
     border-radius: 8px;
     margin-bottom: 1rem;
 }
