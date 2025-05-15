@@ -328,3 +328,32 @@ img {
     color: #555;
     line-height: 1.6;
 }
+
+@media (max-width: 600px) {
+    .team-card {
+        max-width: 100%;
+    }
+
+    .team-card img {
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-block {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .service-block img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+        margin: 0 auto;
+    }
+
+    .service-info {
+        margin-bottom: 1rem;
+    }
+}
