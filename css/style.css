@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #222;
+}
+
+.headerbar {
+    background-color: #222;
+    color: #fff;
+    font-size: 0.85rem;
+    padding: 5px 15px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.headerbar a {
+    color: #ddd;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+.headerbar a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: fit-content;
+    object-fit: cover;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.navbar {
+    background: #e6e6e6;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #222;
+    color: #ffff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.services-preview {
+    padding: 4rem 0;
+    background: #d3d3d3;
+}
+
+.services-preview h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.card {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.card h4 {
+    margin-top: 1rem;
+}
+
+.why-us {
+    background-color: #f0f0f0;
+    padding: 4rem 0;
+}
+
+.why-us h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.why-us ul {
+    list-style: none;
+    text-align: center;
+}
+
+.why-us li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+}
+
+.navbar img {
+    width: 200px;
+    height: auto;
+
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    Object-fit: contain;
+    display: black;
+
+}
+
+.contact-form-section {
+    padding: 4rem 0;
+    background: #d3d3d3;
+    text-align: center;
+}
+
+.contact-form-section h2 {
+    margin-bottom: 0.5rem;
+}
+
+.contact-form-section p {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    text-align: right;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    margin-top: 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-details h2 {
+    margin-bottom: 0.3em;
+}
+
+.contact-details p {
+    margin: 0.2em 0;
+    line-height: 2;
+}
+
+.contact-details a {
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+
+.team-section {
+    padding: 4rem 0;
+    background: #d3d3d3;
+    text-align: center;
+
+}
+
+.team-section h2 {
+    margin-bottom: 0.5rem,
+}
+
+.team-section p {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.team-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+}
+
+.team-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.team-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.team-card h4 {
+    margin-bottom: 0.3rem;
+}
+
+.team-card .role {
+    font-style: italic;
+    color: #444;
+    margin-bottom: 0.5rem;
+}
