@@ -28,7 +28,7 @@
     <meta name="twitter:description" content="Tailored spaces that inspire – custom interiors in Gauteng..">
     <meta name="twitter:image" content="https://www.sowetoluxeinteriors.co.za/images/logo3.png">
 
-
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -60,18 +60,18 @@
             <h2>Contact Us</h2>
             <p>Have a question, idea, or project? Let's talk.</p>
 
-            <form class="contact-form" action="#" method="POST">
-                <label for="name">Full Name *</label>
-                <input type="text" id="name" name="name" required />
+            <form class="contact-form" id="contact-form">
+                <label for="from_name">Full Name *</label>
+                <input type="text" id="from_name" name="from_name" placeholder="Your full name" required />
 
-                <label for="email">Email Address *</label>
-                <input type="email" id="email" name="email" required />
+                <label for="reply_to">Email Address *</label>
+                <input type="email" id="reply_to" name="reply_to" placeholder="you@example.com" required />
 
                 <label for="phone">Phone (optional)</label>
-                <input type="tel" id="phone" name="phone" />
+                <input type="tel" id="phone" name="phone" placeholder="e.g 081 234 5678" />
 
-                <label for="'message">Your Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
 
                 <button type="submit" class="btn">Send Message</button>
             </form>
@@ -88,6 +88,26 @@
 
         </div>
     </section>
+
+
+    <script>
+        (function () {
+            emailjs.init("mTWWaO-avDUbcVjOk");
+        })();
+
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            emailjs.sendForm("service_gd6ku7m", "template_ej2nzg8", this)
+                .then(() => {
+                    alert("Message sent successfully!");
+                    this.reset();
+                }, (error) => {
+                    console.error("Failed to send message:", error);
+                    alert("Oops! Something went wrong. Please try again.");
+                });
+        });
+    </script>
 
     <footer class="footer">
         <div class="container">
