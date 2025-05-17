@@ -118,12 +118,20 @@ img {
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
-        color: #222
+        color: #222;
+        z-index: 999;
     }
 
     .nav-links {
         display: none;
         flex-direction: column;
+        background: #d3d3d3;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 1rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
 
     .nav-links.active {
