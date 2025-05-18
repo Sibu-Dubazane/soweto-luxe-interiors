@@ -174,13 +174,13 @@ img {
 .hero h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #ffff;
+    color: #999999;
 }
 
 .hero p {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #ffff;
+    color: #888888;
 }
 
 .btn {
@@ -489,12 +489,13 @@ input[type="file"]::file-selector-button:hover {
 
 .about-hero h2 {
     margin-bottom: 1rem;
+    color: #999999;
 }
 
 .about-hero p {
     max-width: 800px;
     margin: 0 auto;
-    color: #555;
+    color: #888888;
 }
 
 .about-journey {
@@ -507,7 +508,7 @@ input[type="file"]::file-selector-button:hover {
 .about-journey h2 {
     position: relative;
     z-index: 3;
-    color: #fff;
+    color: #999999;
     margin-bottom: 2rem;
     text-align: center;
 
@@ -546,7 +547,7 @@ input[type="file"]::file-selector-button:hover {
 }
 
 .journey-card p {
-    color: white;
+    color: #999999;
 }
 
 .core-values {
