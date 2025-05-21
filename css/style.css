@@ -659,7 +659,7 @@ input[type="file"]::file-selector-button:hover {
 /* ====== GALLERY ====== */
 
 .gallery-grid {
-    background: #fff;
+    background: #d5d5d5;
     padding: 3rem 0;
     overflow: visible;
 }
@@ -712,4 +712,24 @@ input[type="file"]::file-selector-button:hover {
         transform: none;
         z-index: 1;
     }
+}
+
+.gallery-hero {
+    background: transparent;
+    padding: 4rem 0 2rem 0;
+    text-align: center;
+    background-color: #d3d3d3;
+}
+
+.gallery-hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #999999;
+}
+
+.gallery-hero p {
+    color: #888888;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
 }
