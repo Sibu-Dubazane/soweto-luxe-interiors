@@ -11,6 +11,8 @@ body {
     color: #222;
 }
 
+/* ====== INDEX ====== */
+
 .headerbar {
     background-color: #222;
     color: #fff;
@@ -44,6 +46,7 @@ img {
     margin: auto;
 }
 
+/* ====== ALERT BANNER ====== */
 .alert-banner {
     background-color: #121212;
     color: #fff;
@@ -71,7 +74,7 @@ img {
     }
 }
 
-
+/* ====== NAVBAR ====== */
 
 .navbar {
     display: flex;
@@ -113,6 +116,8 @@ img {
     text-decoration: none;
 }
 
+/* ====== MENU TOGGLE ====== */
+
 .menu-toggle {
     display: none;
     font-size: 1.5rem;
@@ -150,6 +155,7 @@ img {
     }
 }
 
+/* ====== INTRO ====== */
 .hero {
     position: relative;
     padding: 4rem 0;
@@ -254,6 +260,8 @@ img {
     font-size: 1.1rem;
 }
 
+
+/* ====== FOOTER ====== */
 .footer {
     background: #222;
     color: #fff;
@@ -277,6 +285,8 @@ img {
     display: block;
 
 }
+
+/* ====== CONTACT FORM ====== */
 
 .contact-form-section {
     padding: 4rem 0;
@@ -359,7 +369,7 @@ input[type="file"]::file-selector-button:hover {
     background-color: #444;
 }
 
-
+/* ====== TEAM SECTION ====== */
 
 .team-section {
     padding: 4rem 0;
@@ -410,6 +420,8 @@ input[type="file"]::file-selector-button:hover {
     color: #444;
     margin-bottom: 0.5rem;
 }
+
+/* ====== SERVICES ====== */
 
 .services-full {
     padding: 4rem 0;
@@ -488,6 +500,8 @@ input[type="file"]::file-selector-button:hover {
         margin-bottom: 1rem;
     }
 }
+
+/* ====== ABOUT ====== */
 
 .about-hero {
     background: #f8f8f8;
@@ -601,7 +615,7 @@ input[type="file"]::file-selector-button:hover {
     font-weight: 600;
 }
 
-/*Careers Page */
+/* ====== CAREERS PAGE ====== */
 .careers-page {
     padding: 4rem 0;
     text-align: center;
@@ -640,4 +654,62 @@ input[type="file"]::file-selector-button:hover {
 .status-msg {
     font-weight: 600;
     color: #c0392b;
+}
+
+/* ====== GALLERY ====== */
+
+.gallery-grid {
+    background: #fff;
+    padding: 3rem 0;
+    overflow: visible;
+}
+
+.gallery-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* neat rows */
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+.gallery-wrapper img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.gallery-wrapper img:hover {
+    transform: scale(1.6);
+    z-index: 10;
+}
+
+.with-bg {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.with-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/background2.jpg") no-repeat center center/cover;
+    filter: blur(4px);
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    .gallery-wrapper img:hover {
+        transform: none;
+        z-index: 1;
+    }
 }
