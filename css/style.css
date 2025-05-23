@@ -83,6 +83,9 @@ img {
     padding: 1rem;
     background: #eaeaea;
     color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar .container {
@@ -129,29 +132,35 @@ img {
 
 /*====Responsive style for smaller screens.====*/
 @media (max-width: 768px) {
-
-    .menu-toggle,
-    .navbar {
+    .menu-toggle {
         display: block;
         color: #222;
-        z-index: 999;
+        z-index: 1001;
         position: relative;
     }
 
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background: #d3d3d3;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 100%;
-        padding: 1rem;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
+    .navbar {
+        display: block;
+        color: #222;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
 
-    .nav-links.active {
-        display: flex;
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            background: #d3d3d3;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            width: 100%;
+            padding: 1rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-links.active {
+            display: flex;
+        }
     }
 }
 
@@ -379,7 +388,7 @@ input[type="file"]::file-selector-button:hover {
 }
 
 .team-section h2 {
-    margin-bottom: 0.5rem,
+    margin-bottom: 0.5rem;
 }
 
 .team-section p {
