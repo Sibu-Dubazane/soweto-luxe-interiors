@@ -465,9 +465,42 @@ input[type="file"]::file-selector-button:hover {
 .service-block img {
     width: 100%;
     max-width: 400px;
+    height: 250px;
+    object-fit: cover;
     border-radius: 8px;
     flex-shrink: 0;
 }
+
+@media (max-width: 600px) {
+    .service-block img {
+        height: 180px;
+        /* or 160px — whatever height works for mobile */
+    }
+}
+
+.image-box {
+    aspect-ratio: 16 / 10;
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .image-box {
+        padding-bottom: 56.25%;
+        /* 16:9 for phones */
+    }
+}
+
+
 
 .service-info {
     flex: 1;
