@@ -526,24 +526,41 @@ input[type="file"]::file-selector-button:hover {
     }
 }
 
+
 @media (max-width: 768px) {
     .service-block {
         flex-direction: column !important;
         text-align: center;
+        align-items: center;
+        /* Add this for horizontal centering */
     }
 
     .service-block img {
-        width: 100%;
+        width: 300px;
+        /* Fix width to a consistent size */
         max-width: 100%;
-        height: auto;
-        object-fit: contain;
+        /* Ensure it doesn't exceed container */
+        height: 200px;
+        /* Fix height for consistency */
+        object-fit: cover;
+        /* Changed to 'cover' to avoid empty spaces */
         margin: 0 auto;
+        border-radius: 8px;
+        /* Optional, for nicer look */
+        display: block;
+        /* Remove inline quirks */
     }
 
     .service-info {
-        margin-bottom: 1rem;
+        margin-top: 1rem;
+        /* Changed from margin-bottom for better spacing */
+        margin-bottom: 0;
     }
 }
+
+
+
+
 
 /* ====== ABOUT ====== */
 
