@@ -114,10 +114,30 @@ img {
     list-style: none;
 }
 
+/* Mobile only */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;              /* Hide by default on mobile */
+    flex-direction: column;     /* Stack links vertically */
+    background: #d3d3d3;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }};
+
+    .nav-links.active {
+    display: flex;              /* Show when toggled */
+  }
+
 .nav-links a {
     color: black;
     text-decoration: none;
 }
+
+
 
 /* ====== MENU TOGGLE ====== */
 
@@ -129,6 +149,21 @@ img {
     color: white;
     cursor: pointer;
 }
+
+/* Show hamburger on mobile and style it */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    color: #222;
+    position: relative;
+    z-index: 1001;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+
 
 /*====Responsive style for smaller screens.====*/
 @media (max-width: 768px) {
@@ -793,4 +828,25 @@ input[type="file"]::file-selector-button:hover {
     font-size: 1.1rem;
     max-width: 700px;
     margin: 0 auto;
+}
+
+
+/* FOOTER MENU NAV */
+
+.footer-nav ul {
+  list-style: none;           /* Remove bullets */
+  padding: 0;
+  display: flex;              /* Horizontal list */
+  justify-content: center;    /* Centered */
+  gap: 1.5rem;                /* Spacing between links */
+  margin-bottom: 1rem;        /* Space below nav */
+}
+
+.footer-nav a {
+  color: #fff;                /* White text */
+  text-decoration: none;      /* No underline */
+}
+
+.footer-nav a:hover {
+  text-decoration: underline; /* Underline on hover */
 }
