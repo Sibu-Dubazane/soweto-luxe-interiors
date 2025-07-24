@@ -424,18 +424,22 @@ input[type="file"]::file-selector-button:hover {
 
 .team-section h2 {
     margin-bottom: 0.5rem;
+    font-size:  2rem;
+    color: #222;
 }
 
 .team-section p {
     color: #666;
     margin-bottom: 2rem;
+
 }
 
 .team-grid {
     display: grid;
     gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+   /*== justify-items: center; */
+   align-items: stretch;
 }
 
 .team-card {
@@ -443,16 +447,20 @@ input[type="file"]::file-selector-button:hover {
     padding: 1.5rem;
     border-radius: 10px;
     text-align: center;
-    max-width: 280px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    max-width: 100%;
+    box-shadow: 0 6px 16pxpx rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e0e0e0;
+    /* Add Ons*/
+    Display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
-.team-card img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    height: auto;
-    object-fit: contain;
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
 }
 
 .team-card h4 {
@@ -834,19 +842,19 @@ input[type="file"]::file-selector-button:hover {
 /* FOOTER MENU NAV */
 
 .footer-nav ul {
-  list-style: none;           /* Remove bullets */
+  list-style: none;           
   padding: 0;
-  display: flex;              /* Horizontal list */
-  justify-content: center;    /* Centered */
-  gap: 1.5rem;                /* Spacing between links */
-  margin-bottom: 1rem;        /* Space below nav */
+  display: flex;             
+  justify-content: center;   
+  gap: 1.5rem;               
+  margin-bottom: 1rem;        
 }
 
 .footer-nav a {
-  color: #fff;                /* White text */
-  text-decoration: none;      /* No underline */
+  color: #fff;               
+  text-decoration: none;      
 }
 
 .footer-nav a:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline; 
 }
