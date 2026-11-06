@@ -4,196 +4,353 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | Soweto Luxe Interiors</title>
+    <title>Our Work | Soweto Luxe Interiors</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
     <link rel="icon" href="images/logo2.png" type="image/png" />
 
-    <!-- General SEO -->
-    <meta name="description"
-        content="Transform your space with Soweto Luxe Interiors – custom kitchens, wardrobes, plumbing, electrical & more across Gauteng.">
+    <meta name="description" content="See Soweto Luxe Interiors in action — custom built-in units, bathroom units, electrical, plumbing, paving, painting, tiling and ceiling installation across Gauteng. Watch our latest work on TikTok, Instagram and Facebook.">
 
-    <!-- Open Graph (used by Facebook, LinkedIn, etc.) -->
-    <meta property="og:title" content="Soweto Luxe Interiors">
-    <meta property="og:description"
-        content="Personalised interiors, kitchen units, wardrobes, plumbing, electrical and more.">
-    <meta property="og:image" content="https://www.sowetoluxeinteriors.co.za/images/logo3.png">
-    <meta property="og:url" content="https://www.sowetoluxeinteriors.co.za">
+    <meta property="og:title" content="Our Work | Soweto Luxe Interiors">
+    <meta property="og:description" content="Real projects, real craftsmanship. Watch our latest custom interior builds on TikTok, Instagram and Facebook.">
+    <meta property="og:image" content="https://www.sowetoluxeinteriors.co.za/images/logo2.png">
+    <meta property="og:url" content="https://www.sowetoluxeinteriors.co.za/gallery.html">
     <meta property="og:type" content="website">
 
-    <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Soweto Luxe Interiors">
-    <meta name="twitter:description" content="Tailored spaces that inspire – custom interiors in Gauteng..">
-    <meta name="twitter:image" content="https://www.sowetoluxeinteriors.co.za/images/logo3.png">
+    <meta name="twitter:title" content="Our Work | Soweto Luxe Interiors">
+    <meta name="twitter:description" content="Real projects, real craftsmanship. Watch our latest custom interior builds on TikTok, Instagram and Facebook.">
+    <meta name="twitter:image" content="https://www.sowetoluxeinteriors.co.za/images/logo2.png">
 
-    <!--use scalable vector icons easily-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <style>
+        /* ── Page hero ── */
+        .work-hero {
+            background: #1a1a1a;
+            padding: 4.5rem 1rem 3.5rem;
+            text-align: center;
+        }
+
+        .work-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.2rem, 5vw, 3.2rem);
+            color: #C9963C;
+            margin-bottom: 0.75rem;
+        }
+
+        .work-hero p {
+            color: #b0a89a;
+            font-size: 1.08rem;
+            max-width: 620px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        /* ── Social funnel ── */
+        .social-funnel {
+            background: #fafaf8;
+            padding: 3.5rem 1rem 4rem;
+            text-align: center;
+        }
+
+        .social-funnel h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.7rem, 4.5vw, 2.4rem);
+            color: #1a1a1a;
+            margin-bottom: 0.75rem;
+        }
+
+        .social-funnel .lead {
+            color: #6b6560;
+            font-size: 1rem;
+            max-width: 620px;
+            margin: 0 auto 2.75rem;
+            line-height: 1.7;
+        }
+
+        .social-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.25rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .social-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 2.25rem 1.5rem;
+            border: 1px solid #e2ddd4;
+            border-radius: 14px;
+            background: #ffffff;
+            text-decoration: none;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .social-card:hover,
+        .social-card:focus-visible {
+            transform: translateY(-4px);
+            border-color: #C9963C;
+            box-shadow: 0 10px 26px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-card:focus-visible {
+            outline: 2px solid #C9963C;
+            outline-offset: 3px;
+        }
+
+        .social-card i {
+            font-size: 2.6rem;
+            color: #C9963C;
+        }
+
+        .social-card .handle {
+            color: #1a1a1a;
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+
+        .social-card .desc {
+            color: #6b6560;
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+
+        .social-card .go {
+            margin-top: 0.35rem;
+            color: #C9963C;
+            font-size: 0.82rem;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+        }
+
+        /* ── Quote CTA band ── */
+        .work-cta {
+            background: #C9963C;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .work-cta h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.5rem, 4vw, 2.1rem);
+            color: #1a1a1a;
+            margin-bottom: 0.6rem;
+        }
+
+        .work-cta p {
+            color: #3a2f16;
+            font-size: 1rem;
+            max-width: 520px;
+            margin: 0 auto 1.75rem;
+            line-height: 1.6;
+        }
+
+        .work-cta-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.85rem;
+        }
+
+        .work-cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem 1.6rem;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+        }
+
+        .work-cta-btn.primary {
+            background: #1a1a1a;
+            color: #fff;
+        }
+
+        .work-cta-btn.secondary {
+            background: #fff;
+            color: #1a1a1a;
+        }
+
+        .work-cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+        }
+
+        .work-cta-btn:focus-visible {
+            outline: 2px solid #1a1a1a;
+            outline-offset: 3px;
+        }
+
+        /* ── WhatsApp float ── */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 1.75rem;
+            right: 1.75rem;
+            z-index: 999;
+            background: #25D366;
+            color: #fff;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 22px rgba(37, 211, 102, 0.55);
+        }
+
+        .whatsapp-float:focus-visible {
+            outline: 3px solid #25D366;
+            outline-offset: 3px;
+        }
+    </style>
 </head>
 
 <body>
 
     <div class="headerbar">
-        <p><b>Contact us: <a href="tel:+27815936512">+27 81 593 6512</a> | <a
-                    href="mailto:info@sowetoluxeinteriors.co.za">info@sowetoluxeinteriors.co.za</a></b></p>
-    </div>
-
-    <div class="alert-banner">
-        <span class="scroll-text">ℹ️ This site is working great — we’re just making it even better behind the scenes.
-            Thanks for visiting!</span>
+        <p><b>Contact us: <a href="tel:+27815936512">+27 81 593 6512</a> | <a href="mailto:info@sowetoluxeinteriors.co.za">info@sowetoluxeinteriors.co.za</a></b></p>
     </div>
 
     <header class="navbar">
         <div class="container">
-            <a href="index.html"><img src="images/logo2.png" alt="Soweto Luxe Interiors" class="logo" /></a>
-            <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
-
+            <a href="index.html"><img src="images/logo2.png" alt="Soweto Luxe Interiors home" class="logo" /></a>
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Our Work</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="gallery-hero">
+    <!-- Page hero -->
+    <section class="work-hero">
         <div class="container">
-            <h2>Project Showcase</h2>
-            <p>Explore our portfolio of custom interiors - kitchen units, plumbing, TV Wall units, bedroom units,
-                electrical, painting, tiling and more.</p>
+            <h1>Our Work</h1>
+            <p>We let our builds speak for themselves. Watch full project walkthroughs, behind-the-scenes and finished reveals over on our social channels — updated every week.</p>
         </div>
     </section>
 
-    <section class="gallery-grid with-bg">
+    <!-- Social funnel -->
+    <section class="social-funnel">
         <div class="container">
-            <div class="gallery-wrapper">
-                <img src="Gallery/kitchen1.JPG" alt="custom kitchen unit" />
-                <img src="Gallery/kitchen10.JPG" alt="custom kitchen unit" />
-                <img src="Gallery/kitchen11.JPG" alt="custom kitchen unit" />
-                <img src="Gallery/kitchen9.JPG" alt="custom kitchen unit" />
-                <img src="gallery/kitchen12.jpg" alt="custom kitchen unit" />
-                <img src="gallery/kitchen13.jpg" alt="custom kitchen unit" />
-                <img src="gallery/kitchen14.jpg" alt="custom kitchen unit" />
-                <img src="Gallery/IMG_0698.JPG" alt="custom bedroom unit"/>
-                <img src="Gallery/tvstand1.jpg" alt="custom TV stand unit"/>
-                <img src="Gallery/5d2ec034-e61c-44ed-a5ca-4758fd7c1e11.JPG" alt="custom TV stand unit"/>
-                <img src="Gallery/floridakitchen.jpeg" alt="custom kitchen unit"/>
-                <img src="Gallery/floridakitchen2.jpeg" alt="custom kitchen unit"/>
-                <img src="Gallery/floridakitchen3.jpeg" alt="custom kitchen unit"/>
-                <img src="Gallery/7c3c207f-31b2-48ae-b542-07714ad42735.JPG" alt="custom kitchen unit"/>
-                <img src="Gallery/ad517418-3dbe-4c11-80c3-07049c5848d6.JPG" alt="custom kitchen unit"/>
-                <img src="Gallery/IMG_1039.JPG" alt="custom kitchen unit"/>
-                <img src="Gallery/IMG_1043.jpg" alt="custom kitchen unit" />
-                <img src="Gallery/IMG_0904.jpg" alt="custom kitchen unit"/>
-                <img src="Gallery/IMG_0905.jpg" alt="custom kitchen unit"/>
-                <img src="Gallery/IMG_0906.jpg" alt="custom kitchen unit"/>
-                <img src="Gallery/IMG_0904.jpg" alt="custom kitchen unit"/>
-                <img src="Gallery/IMG_1138.jpg" alt="custom bedroom unit"/>
-                <img src="Gallery/IMG_1137.JPG" alt="custom bedroom unit" />
-                <img src="Gallery/bathroom1.JPG" alt="custom bathroom unit" />
-                <img src="Gallery/kitchen5.jpg" alt="custom kitchen unit" />
-                <img src="Gallery/kitchen6.JPG" alt="custom kitchen unit" />
-                <img src="Gallery/kitchen7.JPG" alt="custom kitchen unit" />
-                <img src="Gallery/kitchen8.jpg" alt="custom kitchen unit" />
-                <img src="Gallery/kitchen3.jpg" alt="custom kitchen unit" />
-                <img src="Gallery/kitchen4.jpg" alt="custom kitchen unit" />
+            <h2>See Our Work in Action</h2>
+            <p class="lead">We do it all across Gauteng — custom built-in units (kitchens, bedrooms and TV stands), bathroom units, electrical, plumbing, paving, painting, tiling and ceiling installation. Follow along for our latest projects, before &amp; afters and real client installs.</p>
 
+            <div class="social-cards">
+                <a href="https://www.tiktok.com/@sowetoluxeinteriors" target="_blank" rel="noopener noreferrer" class="social-card">
+                    <i class="fab fa-tiktok"></i>
+                    <span class="handle">@sowetoluxeinteriors</span>
+                    <span class="desc">Project walkthroughs &amp; build videos</span>
+                    <span class="go">Watch on TikTok &rarr;</span>
+                </a>
+                <a href="https://instagram.com/sowetoluxeinteriors" target="_blank" rel="noopener noreferrer" class="social-card">
+                    <i class="fab fa-instagram"></i>
+                    <span class="handle">@sowetoluxeinteriors</span>
+                    <span class="desc">Finished installs &amp; before / afters</span>
+                    <span class="go">Follow on Instagram &rarr;</span>
+                </a>
+                <a href="https://www.facebook.com/sowetoluxeinteriors" target="_blank" rel="noopener noreferrer" class="social-card">
+                    <i class="fab fa-facebook-f"></i>
+                    <span class="handle">@sowetoluxeinteriors</span>
+                    <span class="desc">Project photos &amp; updates</span>
+                    <span class="go">Follow on Facebook &rarr;</span>
+                </a>
             </div>
         </div>
     </section>
 
+    <!-- Quote CTA -->
+    <section class="work-cta">
+        <h2>Want a unit like ours?</h2>
+        <p>Tell us about your space and we'll put together a quote for your custom build.</p>
+        <div class="work-cta-buttons">
+            <a href="https://wa.me/27815936512?text=Hello%2C%20I%27m%20interested%20in%20a%20custom%20unit." target="_blank" rel="noopener noreferrer" class="work-cta-btn primary">
+                <i class="fab fa-whatsapp"></i> Request Quote
+            </a>
+            <a href="contact.html" class="work-cta-btn secondary">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- WhatsApp floating button -->
+    <a href="https://wa.me/27815936512?text=Hello%2C%20I%27m%20interested%20in%20your%20services."
+       class="whatsapp-float"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
     <footer class="footer">
         <nav aria-label="Footer navigation" class="footer-nav">
-  <ul>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="team.html">Team</a></li>
-    <li><a href="careers.html">Careers</a></li>
-  </ul>
-</nav>
-
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="careers.html">Careers</a></li>
+            </ul>
+        </nav>
         <div class="container">
             <p>&copy; 2026 Soweto Luxe Interiors. Inspired by Africa, Designed by Luxury.</p>
             <div class="social-icons">
-                <a href="https://www.tiktok.com/@sowetoluxeinteriors" target="_blank" aria-label="TikTok"><i
-                        class="fab fa-tiktok"></i></a>
-                <a href="https://instagram.com/sowetoluxeinteriors" target="_blank" aria-label="Instagram"><i
-                        class="fab fa-instagram"></i></a>
-                <a href="https://facebook.com/profile.php?id=61576335003650" target="_blank" aria-label="Facebook"><i
-                        class="fab fa-facebook-f"></i></a>
-                <a href="https://twitter.com/sowetoluxeinter" target="_blank" aria-label="Twitter"><i
-                        class="fab fa-twitter"></i></a>
-                <a href="https://linkedin.com//company/soweto-luxe-interiors" target="_blank" aria-label="LinkedIn"><i
-                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.tiktok.com/@sowetoluxeinteriors" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="https://instagram.com/sowetoluxeinteriors" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/sowetoluxeinteriors" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/sowetoluxeinter" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com/company/soweto-luxe-interiors" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </footer>
 
-      <!-- Lightbox Modal -->
-  <div id="lightbox" class="lightbox">
-    <span class="close">&times;</span>
-    <img class="lightbox-img" src="" alt="">
-    <div class="lightbox-nav">
-      <span class="prev">&#10094;</span>
-      <span class="next">&#10095;</span>
-    </div>
-  </div>
-
-  <!-- Scripts -->   
     <script src="menu.js"></script>
-          <script src="lightbox.js"></script>
-          
-          <script>
 
-    const galleryImages = document.querySelectorAll('.gallery-wrapper img');
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.querySelector('.lightbox-img');
-    const closeBtn = document.querySelector('.lightbox .close');
-    const prevBtn = document.querySelector('.lightbox-nav .prev');
-    const nextBtn = document.querySelector('.lightbox-nav .next');
+    <!-- ══════════════════════════════════════════════════════════════════
+         ARCHIVED: previous full 30-photo filterable gallery + TikTok embeds,
+         and the interim 6-photo highlight strip. Removed from the live page
+         on 2026-09-10 in favour of a social-first "Our Work" hub (photos are
+         showcased on TikTok / Instagram / Facebook instead). Kept here (and in
+         git history) so any photo or the full grid can be restored quickly.
 
-let currentIndex = 0;
+         Image files still in the repo under /Gallery:
+           KITCHENS: kitchen1.JPG, kitchen2.JPG, kitchen3.jpg, kitchen4.jpg,
+           kitchen5.jpg, kitchen6.JPG, kitchen7.JPG, kitchen8.jpg, kitchen9.JPG,
+           kitchen10.JPG, kitchen11.JPG, kitchen12.jpg, kitchen13.jpg, kitchen14.jpg,
+           floridakitchen.jpeg, floridakitchen2.jpeg, floridakitchen3.jpeg,
+           7c3c207f-31b2-48ae-b542-07714ad42735.JPG, IMG_0904.jpg, IMG_0905.jpg,
+           IMG_0906.jpg, IMG_1039.JPG, IMG_1043.jpg
+           BEDROOMS: IMG_0698.JPG, IMG_1138.jpg, IMG_1137.JPG
+           BATHROOMS: bathroom1.JPG
+           TV & WALL UNITS: tvstand1.jpg,
+           5d2ec034-e61c-44ed-a5ca-4758fd7c1e11.JPG,
+           ad517418-3dbe-4c11-80c3-07049c5848d6.JPG
 
-function showLightbox(index) {
-  currentIndex = index;
-  lightboxImg.src = galleryImages[index].src;
-  lightbox.style.display = 'flex';
-}
+         Full <img> markup, category filters, grid/lightbox CSS + JS and the
+         "Behind the Scenes" TikTok embed section are preserved in git history
+         (commit 918179d and the working-tree versions prior to this edit).
+         ══════════════════════════════════════════════════════════════════ -->
 
-galleryImages.forEach((img, index) => {
-  img.addEventListener('click', () => showLightbox(index));
-});
-
-closeBtn.addEventListener('click', () => lightbox.style.display = 'none');
-
-prevBtn.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
-  lightboxImg.src = galleryImages[currentIndex].src;
-});
-
-nextBtn.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % galleryImages.length;
-  lightboxImg.src = galleryImages[currentIndex].src;
-});
-
-// Close on outside click
-lightbox.addEventListener('click', e => {
-  if (e.target === lightbox) lightbox.style.display = 'none';
-});
-
-// Optional: Keyboard navigation
-document.addEventListener('keydown', e => {
-  if(lightbox.style.display === 'flex'){
-    if(e.key === 'ArrowLeft') prevBtn.click();
-    if(e.key === 'ArrowRight') nextBtn.click();
-    if(e.key === 'Escape') lightbox.style.display = 'none';
-  }
-});
-
-          </script>
 </body>
 
 </html>
