@@ -38,7 +38,7 @@
         .work-hero h1 {
             font-family: 'Playfair Display', serif;
             font-size: clamp(2.2rem, 5vw, 3.2rem);
-            color: #C9963C;
+            color: var(--color-accent-on-dark);
             margin-bottom: 0.75rem;
         }
 
@@ -97,18 +97,18 @@
         .social-card:hover,
         .social-card:focus-visible {
             transform: translateY(-4px);
-            border-color: #C9963C;
+            border-color: var(--color-accent-border);
             box-shadow: 0 10px 26px rgba(0, 0, 0, 0.1);
         }
 
         .social-card:focus-visible {
-            outline: 2px solid #C9963C;
+            outline: 2px solid var(--color-accent);
             outline-offset: 3px;
         }
 
         .social-card i {
             font-size: 2.6rem;
-            color: #C9963C;
+            color: var(--color-accent);
         }
 
         .social-card .handle {
@@ -125,7 +125,7 @@
 
         .social-card .go {
             margin-top: 0.35rem;
-            color: #C9963C;
+            color: var(--color-accent);
             font-size: 0.82rem;
             font-weight: 600;
             letter-spacing: 0.03em;
@@ -134,7 +134,7 @@
 
         /* ── Quote CTA band ── */
         .work-cta {
-            background: #C9963C;
+            background: var(--color-accent);
             padding: 3rem 1rem;
             text-align: center;
         }
@@ -142,12 +142,12 @@
         .work-cta h2 {
             font-family: 'Playfair Display', serif;
             font-size: clamp(1.5rem, 4vw, 2.1rem);
-            color: #1a1a1a;
+            color: #f5f2ee;
             margin-bottom: 0.6rem;
         }
 
         .work-cta p {
-            color: #3a2f16;
+            color: rgba(245, 242, 238, 0.88);
             font-size: 1rem;
             max-width: 520px;
             margin: 0 auto 1.75rem;
@@ -308,7 +308,6 @@
         <nav aria-label="Footer navigation" class="footer-nav">
             <ul>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="team.html">Team</a></li>
                 <li><a href="careers.html">Careers</a></li>
             </ul>
         </nav>

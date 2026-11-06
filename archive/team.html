@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--
+  ARCHIVED — Meet the Team page (not linked on the live site).
+  Restore: move back to site root as team.html, fix paths to remove ../ prefixes,
+  remove noindex meta tags, and re-add the Team link in footer nav on all pages.
+-->
 <head>
     <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="googlebot" content="noindex, nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meet the Team | Soweto Luxe Interiors </title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
-    <link rel="icon" href="images/logo2.png" type="image/png" />
+    <link rel="icon" href="../images/logo2.png" type="image/png" />
 
-    <!-- General SEO -->
     <meta name="description" content="Get to know the passionate team behind Soweto Luxe Interiors. Dedicated
         professionals bringing creativity, precision, and service to every project.">
 
-    <!-- Open Graph (used by Facebook, LinkedIn, etc.) -->
     <meta property="og:title" content="Soweto Luxe Interiors">
     <meta property="og:description"
         content="Personalised interiors, kitchen units, wardrobes, plumbing, electrical and more.">
@@ -22,16 +26,12 @@
     <meta property="og:url" content="https://www.sowetoluxeinteriors.co.za">
     <meta property="og:type" content="website">
 
-    <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Meet the Team | Soweto Luxe Interiors">
     <meta name="twitter:description"
         content="Get to know the passionate team behind Soweto Luxe Interiors. Meet the people who make beautiful spaces possible.">
     <meta name="twitter:image" content="https://www.sowetoluxeinteriors.co.za/images/logo3.png">
-    <meta property="og:url" content="https://www.sowetoluxeinteriors.co.za/team.html">
-    <meta property="og:type" content="website">
 
-    <!--use scalable vector icons easily-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
@@ -42,22 +42,16 @@
                     href="mailto:info@sowetoluxeinteriors.co.za">info@sowetoluxeinteriors.co.za</a></b></p>
     </div>
 
-    <div class="alert-banner">
-        <span class="scroll-text">ℹ️ This site is working great — we’re just making it even better behind the scenes.
-            Thanks for visiting!</span>
-    </div>
-
-
     <header class="navbar">
         <div class="container">
-            <a href="index.html"><img src="images/logo2.png" alt="Soweto Luxe Interiors" class="logo" /></a>
-            <button class="menu-toggle" aria-label="Toogle menu">&#9776;</button>
+            <a href="../index.html"><img src="../images/logo2.png" alt="Soweto Luxe Interiors" class="logo" /></a>
+            <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="gallery.html">Our Work</a></li>
-                    <li><a href="contact.html">Contact</a></li>                
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../services.html">Services</a></li>
+                    <li><a href="../gallery.html">Our Work</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -74,12 +68,10 @@
                     <p class="role"> <b> Founder/Chief Visionary <br /> Managing Director</b></p>
                 </div>
 
-
                 <div class="team-card">
                     <h4>Mncedisi Magasela</h4>
                     <p class="role"><b>Co-Founder/Chief Creative <br /> Director of Design</b></p>
                 </div>
-
 
                 <div class="team-card">
                     <h4>Kamogelo Selane</h4>
@@ -87,13 +79,11 @@
                 </div>
 
                 <div class="team-card">
-                  
                     <h4>Unami Xinindi</h4>
                     <p class="role"><b>Field Service Technician <br />Installations</b></p>
                 </div>
 
                 <div class="team-card">
-              
                     <h4>Aubrey Mnyayi</h4>
                     <p class="role"><b>Field Service Technician <br />Renovations</b></p>
                 </div>
@@ -102,16 +92,15 @@
         </div>
     </section>
 
-    <script src="menu.js"></script>
+    <script src="../menu.js"></script>
 
     <footer class="footer">
         <nav aria-label="Footer navigation" class="footer-nav">
-  <ul>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="team.html">Team</a></li>
-    <li><a href="careers.html">Careers</a></li>
-  </ul>
-</nav>
+            <ul>
+                <li><a href="../about.html">About Us</a></li>
+                <li><a href="../careers.html">Careers</a></li>
+            </ul>
+        </nav>
 
         <div class="container">
             <p>&copy; 2026 Soweto Luxe Interiors. Inspired by Africa, Designed by Luxury.</p>

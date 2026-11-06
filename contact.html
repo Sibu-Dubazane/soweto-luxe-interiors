@@ -41,16 +41,10 @@
                     href="mailto:info@sowetoluxeinteriors.co.za">info@sowetoluxeinteriors.co.za</a></b></p>
     </div>
 
-    <div class="alert-banner">
-        <span class="scroll-text">ℹ️ This site is working great — we’re just making it even better behind the scenes.
-            Thanks for visiting!</span>
-    </div>
-
-
     <header class="navbar">
         <div class="container">
             <a href="index.html"><img src="images/logo2.png" alt="Soweto Luxe Interiors" class="logo" /></a>
-            <button class="menu-toggle" aria-label="Toogle menu">&#9776;</button>
+            <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
@@ -77,8 +71,12 @@
                 <label for="phone">Phone (optional)</label>
                 <input type="tel" id="phone" name="phone" placeholder="e.g 081 234 5678" />
 
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+                <label for="message">Your message *</label>
+                <p class="form-hint" id="message-hint">Please include your <strong>contact number</strong> in this
+                    field (we need it here so it always appears in the email we receive).</p>
+                <textarea id="message" name="message" rows="6"
+                    placeholder="Example:&#10;Contact number: +27 81 234 5678&#10;&#10;How can we help you? Describe your project or question."
+                    required aria-describedby="message-hint"></textarea>
 
                 <button type="submit" class="btn">Send Message</button>
             </form>
@@ -102,8 +100,21 @@
             emailjs.init("0SPqgSglB52hM_uaq");
         })();
 
+        function messageIncludesContactNumber(text) {
+            const digits = text.replace(/\D/g, "");
+            return digits.length >= 9;
+        }
+
         document.getElementById("contact-form").addEventListener("submit", function (e) {
             e.preventDefault();
+
+            const messageEl = document.getElementById("message");
+            const msg = messageEl.value.trim();
+            if (!messageIncludesContactNumber(msg)) {
+                alert("Please include your contact number inside “Your message” (at least 9 digits). This helps us reach you if your number does not come through elsewhere.");
+                messageEl.focus();
+                return;
+            }
 
             emailjs.sendForm("service_hje62y4", "template_jcksusv", this)
                 .then(() => {
@@ -120,7 +131,6 @@
         <nav aria-label="Footer navigation" class="footer-nav">
   <ul>
     <li><a href="about.html">About Us</a></li>
-    <li><a href="team.html">Team</a></li>
     <li><a href="careers.html">Careers</a></li>
   </ul>
 </nav>
